@@ -21,7 +21,7 @@ contract SimpleFlash is FlashLoanSimpleReceiverBase {
         bytes memory params = ""; // used to pass arbitrary data to `executeOperation`
         uint16 referralCode = 0; // executed directly
 
-        POOL.flashLoanSimple(receiver, _asset, _amount, params, referalCode);
+        POOL.flashLoanSimple(receiver, _asset, _amount, params, referralCode);
     }
 
     function executeOperation(
